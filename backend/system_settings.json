@@ -1,0 +1,27 @@
+{
+  "triton_url": "http://localhost:8000",
+  "model_name": "violence_model",
+  "model_version": "1",
+  "max_streams": 10,
+  "frame_skip": 3,
+  "confidence_threshold": 0.6,
+  "max_fps": 30,
+  "buffer_size": 16,
+  "enable_gpu": true,
+  "enable_auth": false,
+  "enable_ssl": false,
+  "allowed_origins": [
+    "http://localhost:3000"
+  ],
+  "enable_recording": false,
+  "max_storage_gb": 10,
+  "retention_days": 30,
+  "telegram": {
+    "bot_token": "xxx",
+    "chat_id": "xxx",
+    "enabled": true,
+    "notification_interval": 5,
+    "max_notifications": 50000,
+    "send_thumbnails": true
+  }
+}

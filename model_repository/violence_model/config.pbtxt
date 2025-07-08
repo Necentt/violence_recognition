@@ -1,0 +1,19 @@
+name: "violence_model"
+platform: "pytorch_libtorch"
+max_batch_size: 8
+
+input [
+  {
+    name: "input"
+    data_type: TYPE_FP32
+    dims: [16, 3, 224, 224]  # [T, C, H, W] без batch_dim
+  }
+]
+
+output [
+  {
+    name: "output"
+    data_type: TYPE_FP32
+    dims: [2]  # классы: [no_violence, violence]
+  }
+]
